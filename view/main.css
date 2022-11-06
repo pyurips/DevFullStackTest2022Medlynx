@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@keyframes fadeIn {
+    from {
+        filter: opacity(0%);
+      }
+    
+      to {
+        filter: opacity(1);
+      }
+}
+
+@keyframes fadeOut {
+    from {
+        filter: opacity(1);
+      }
+    
+      to {
+        filter: opacity(0%);
+      }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: rgb(92, 134, 134);
+}
+
+#loginContainer {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    animation-name: fadeIn;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.3);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginContainer > form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginInput {
+    padding: 5px;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #099682;
+    background-color: transparent;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+.loginInput:focus {
+    border-bottom: 3px solid #099682;
+}
+
+#loginContainer button {
+    background-color: rgb(70, 168, 95);
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+#loginContainer button:hover {
+    background-color: rgb(57, 139, 78);
+}
+
+
+#footer {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    animation-name: fadeIn;
+    animation-duration: 0.2s;
+    display: flex;
+    flex-direction: row;
+}
+
+#footer p {
+    margin-top: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: default;
+}
+
+#tablesContainer {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 900px;
+    height: 540px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    display: none;
+    flex-direction: row;
+}
+
+#tablesOptions {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 540px;
+    width: 200px;
+    z-index: 0;
+}
+
+#tablesInfos {
+    background-color: white;
+    height: 540px;
+    width: 700px;
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0, 0.3);
+    z-index: 1;
+    overflow-y: auto;
+}
+
+#tablesInfos::-webkit-scrollbar {
+    width: 3px;
+}
+
+#tablesInfos::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+#tablesInfos::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+#tablesInfos::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.requisitesButton {
+    height: 90px;
+    border: none;
+    border-left: 5px solid #15e7c8;
+    transition-property: all;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.requisitesButton:hover {
+    border-left: 15px solid #15e7c8;
+    background-color: rgb(168, 168, 168);
+}
+
+#tablesInfos > div {
+    display: none;
+}
+
+.tableInfo01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: default;
+}
+
+.descriptionAndQuantity01 {
+    background-color: #1fd1b6;
+    height: 50px;
+    width: auto;
+    text-align: center;
+    display: flex;
+    width: 350px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.tableItems01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.item01 {
+    height: 50px;
+    width: auto;
+    text-align: center;
+    display: flex;
+    width: 350px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.tableInfoItems01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transition-property: all;
+    transition-duration: 0.2s;
+    cursor: default;
+}
+
+.tableInfoItems01:hover {
+    background-color: rgb(196, 196, 196);
+}
+
+#info05 {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#info05 form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#info05 form input {
+    padding: 5px;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #099682;
+    background-color: transparent;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+#info05 form input:focus {
+    border-bottom: 3px solid #099682;
+}
+
+#info05 form div {
+    display: flex;
+    flex-direction: column;
+}
+
+#info05 form button {
+    background-color: rgb(70, 168, 95);
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+#info05 form textarea {
+    resize: none;
+    padding: 5px;
+    outline: none;
+    border-bottom: 1px solid #099682;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+#info05 form textarea:focus {
+    border-bottom: 3px solid #099682;
+}
+
+#info06 {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#info06 form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#info06 form input {
+    padding: 5px;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #099682;
+    background-color: transparent;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+
+#info06 form input:focus {
+    border-bottom: 3px solid #099682;
+}
+
+#info06 form div {
+    display: flex;
+    flex-direction: column;
+}
+
+#info06 form button {
+    background-color: rgb(70, 168, 95);
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#info02 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+#info02 > p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+#info02 form button {
+    background-color: rgb(70, 168, 95);
+    border: none;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#info02 form div {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#info02 form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
